@@ -1,0 +1,81 @@
+﻿@model Entities.Service
+
+@{
+    ViewData["Title"] = "Servis Kaydı Ekle";
+}
+
+<h1>Servis Kaydı Ekle</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="EntryDate" class="control-label"></label>
+                <input asp-for="EntryDate" class="form-control" />
+                <span asp-validation-for="EntryDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VehicleIssue" class="control-label"></label>
+                <input asp-for="VehicleIssue" class="form-control" />
+                <span asp-validation-for="VehicleIssue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ServiceFee" class="control-label"></label>
+                <input asp-for="ServiceFee" class="form-control" />
+                <span asp-validation-for="ServiceFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExitDate" class="control-label"></label>
+                <input asp-for="ExitDate" class="form-control" />
+                <span asp-validation-for="ExitDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerformedActions" class="control-label"></label>
+                <input asp-for="PerformedActions" class="form-control" />
+                <span asp-validation-for="PerformedActions" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="UnderWarranty" /> @Html.DisplayNameFor(model => model.UnderWarranty)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="VehiclePlate" class="control-label"></label>
+                <input asp-for="VehiclePlate" class="form-control" />
+                <span asp-validation-for="VehiclePlate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Brand" class="control-label"></label>
+                <input asp-for="Brand" class="form-control" />
+                <span asp-validation-for="Brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Model" class="control-label"></label>
+                <input asp-for="Model" class="form-control" />
+                <span asp-validation-for="Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VehicleBodyType" class="control-label"></label>
+                <input asp-for="VehicleBodyType" class="form-control" />
+                <span asp-validation-for="VehicleBodyType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ChassisNumber" class="control-label"></label>
+                <input asp-for="ChassisNumber" class="form-control" />
+                <span asp-validation-for="ChassisNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Ekle" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
